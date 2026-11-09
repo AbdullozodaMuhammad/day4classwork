@@ -1,0 +1,53 @@
+// 1 zadanie 
+
+static void Main()
+{
+    int a=int.Parse(Console.ReadLine());
+    PrintFromNumberToOne(a);
+}
+
+//  2 zadanie
+
+static void Main()
+{
+int a = int.Parse(Console.ReadLine());
+PrintFromNumberToOne(a);
+
+int b = int.Parse(Console.ReadLine());
+int c = int.Parse(Console.ReadLine());
+int d = int.Parse(Console.ReadLine());
+int e = int.Parse(Console.ReadLine());
+
+Console.WriteLine(Sum(b, c, d, e));
+}
+
+static void PrintFromNumberToOne(int a)
+{
+for (int i = a; i >= 1; i--)
+{
+Console.Write(i + " ");
+}
+}
+
+static int Sum(int a, int b, int c, int d)
+{
+return a + b + c + d;
+}
+
+
+// 3 zadanie 
+
+static void Main()
+{
+int a=int.Parse(Console.ReadLine());
+Console.WriteLine(Reverse(a));
+}
+
+static int Reverse(int a)
+{
+for (int r=0; a>0; a=a/10)
+{
+    r=r*10+a%10;
+}
+return r;
+}

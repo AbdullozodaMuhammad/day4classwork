@@ -1,0 +1,73 @@
+// 1 zadanie
+static void Main() 
+{ 
+    double a=Convert.ToDouble(Console.ReadLine()); 
+    double sum=0;
+if (a<100)
+{
+    sum+=a*0.05;
+}
+else if (a<=200)
+{
+    sum+=a*0.07;
+}
+else
+{
+    sum+=a*0.10;
+}
+Console.WriteLine(sum);
+}
+
+// 2 zadanie 
+int z = Convert.ToInt32(Console.ReadLine()); 
+int[]a=new int[z]; 
+int p=1;
+    for (int i=0; i<z; i++)
+    {
+        a[i]=Convert.ToInt32(Console.ReadLine());
+        p*=a[i];
+    }
+    Console.WriteLine(p);
+
+// 4 zadanie 
+
+int n=Convert.ToInt32(Console.ReadLine()); 
+int[]a=new int[n];
+    for (int i=0; i<n; i++)
+    {
+        a[i]=Convert.ToInt32(Console.ReadLine());
+    }
+    for (int i=0; i<n; i++)
+    {
+        int k=0;
+        for (int j=0; j<n; j++)
+        {
+            if (a[i]==a[j])
+            {
+                k++;
+            }
+        }
+        if (k==1)
+        {
+            Console.WriteLine(a[i]);
+        }
+    }
+// 5 zadanie 
+
+int n=Convert.ToInt32(Console.ReadLine()); 
+int[]a=new int[n];
+    for (int i=0; i<n; i++)
+    {
+        a[i]=Convert.ToInt32(Console.ReadLine());
+    }
+    int min=a[0];
+    int index=0;
+    for (int i=1; i<n; i++)
+    {
+        if (a[i]<min)
+        {
+            min=a[i];
+            index=i;
+        }
+    }
+    Console.WriteLine(index);
